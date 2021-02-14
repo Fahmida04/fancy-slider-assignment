@@ -53,8 +53,10 @@ const selectItem = (event, img) => {
   let item = sliders.indexOf(img);
   if (item === -1) {
     sliders.push(img);
-  } else {
-    alert('Hey, Already added !')
+  } 
+  else {
+    sliders.pop(img);
+    alert('Image removed');
   }
 }
 var timer
